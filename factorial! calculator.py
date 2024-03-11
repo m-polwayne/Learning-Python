@@ -16,5 +16,6 @@ def factorial(n):
             f=f*(n-1);
             n=n-1;
         print(f);
+    return f;
 
 factorial(9)
