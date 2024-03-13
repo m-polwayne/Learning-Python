@@ -71,3 +71,23 @@ thisdict.update(f1)
 
 print('dictionary after adding new key value pair surname',thisdict) 
 print(thisdict.get('name'))
+thisdict
+print('##################################################')
+#################################################################
+#LIST COMPREHENSIONS
+m=[2*item for item in myList]
+print(m)
+print(myList)
+filterdList=[item for item in myList if item%2==0]
+print(filterdList)
+myString='today is day 2 of studying python. tommorow will be day 3'
+splitString =myString.split()
+print(splitString)
+
+def cleanString(tring):
+    return tring.replace('.','').lower()
+
+yes=[cleanString(ring) for ring in splitString]
+print(yes)
+filterYes=[cleanString(ring) for ring in splitString if type(cleanString(ring))]
+print(filterYes)
