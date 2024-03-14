@@ -29,5 +29,9 @@ class UniqueList(list):
 
 uniqueList=UniqueList()
 uniqueList.append('h')
-uniqueList.append('h')
+uniqueList.append('g')
+h=UniqueList()
+h.append(2)
+h.append(uniqueList)
 print(uniqueList)
+print(h)
