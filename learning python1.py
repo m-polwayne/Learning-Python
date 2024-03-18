@@ -55,7 +55,29 @@ g = l.index('g')
 del (l[g])
 print(l)'''
 
+
 stri = 'MyNameIsMotshidisi'
 stri = "".join([i if i.islower() else ' ' + i.lower()
                if i in ["I", 'N'] else " "+i for i in stri])
 print(stri)
+
+
+myTuple=('d', 'f', 'j')
+
+myList=['a','a','b','c']
+
+mySet={'a','b','c'}
+
+myDictionary={'a':'d','b':'f','c':2}
+
+filterdList=[item for item in myList if item%2==0]
+
+keys = ['a','b','c','d','e']
+values = [1,2,3,4,5]  
+ 
+myDict = { k:v for (k,v) in zip(keys, values)}
+
+myDict= {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
+# Double each value in the dictionary
+double_dict1 = {k:v*2 for (k,v) in myDict.items()}
+print(double_dict1)
