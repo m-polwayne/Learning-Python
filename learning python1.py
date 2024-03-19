@@ -81,7 +81,32 @@ myDict= {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
 # Double each value in the dictionary
 double_dict1 = {k:v*2 for (k,v) in myDict.items()}
 print(double_dict1)'''
-
+'''
 subject=input(' enter your favourite subject: ')
-for i in range(len(subject))[len(subject)::-1]:
-    print(subject[i])
+for i in range(len(subject))[len(subject)::-1]: print(subject[i])'''
+choice=int(input('''select an option 1,2 or 3
+                 1) create a new file
+                 2) display the file
+                 3) add a new item tp the file 
+                  make a selection: 1,2 or 3:
+                 ''' ))
+if choice !=1 and choice!=2 and choice!= 3:
+    print("the choice you have entered does not exist") 
+else:
+    if choice ==1:
+        subject=input('enter a school subject: ')
+        f=open("Subject.txt",'w')
+        f.write(subject+'\n')
+        f.close()
+    elif choice==2:
+        f=open("Subject.txt",'r')
+        print(f.read())
+        f.close()
+    else:
+        subject=input('enter a new school subject: ')
+        f=open("Subject.txt",'a')
+        f.write(subject+'\n')
+        f.close()
+        f=open("Subject.txt",'r')
+        print(f.read())
+        
