@@ -55,7 +55,7 @@ g = l.index('g')
 del (l[g])
 print(l)'''
 
-
+'''
 stri = 'MyNameIsMotshidisi'
 stri = "".join([i if i.islower() else ' ' + i.lower()
                if i in ["I", 'N'] else " "+i for i in stri])
@@ -80,4 +80,8 @@ myDict = { k:v for (k,v) in zip(keys, values)}
 myDict= {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
 # Double each value in the dictionary
 double_dict1 = {k:v*2 for (k,v) in myDict.items()}
-print(double_dict1)
+print(double_dict1)'''
+
+subject=input(' enter your favourite subject: ')
+for i in range(len(subject))[len(subject)::-1]:
+    print(subject[i])
