@@ -84,12 +84,12 @@ print(double_dict1)'''
 '''
 subject=input(' enter your favourite subject: ')
 for i in range(len(subject))[len(subject)::-1]: print(subject[i])'''
-choice=int(input('''select an option 1,2 or 3
+'''choice=int(input(''select an option 1,2 or 3
                  1) create a new file
                  2) display the file
                  3) add a new item tp the file 
                   make a selection: 1,2 or 3:
-                 ''' ))
+                 '' ))
 if choice !=1 and choice!=2 and choice!= 3:
     print("the choice you have entered does not exist") 
 else:
@@ -108,5 +108,6 @@ else:
         f.write(subject+'\n')
         f.close()
         f=open("Subject.txt",'r')
-        print(f.read())
-        
+        print(f.read())'''
+    
+print(int(2.5+3))
