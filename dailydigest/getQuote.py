@@ -24,7 +24,7 @@ print(quote['quote']+' - '+quote['author'])'''
 def getWeather(coords={'lat':2, 'lon':43}):
     try:
         api_key='9286889f30eaefe86c4428f2cf4cb317'
-        url = 
+        url = 'https://api.openweathermap.org/data/2.5/forecast?id=524901&appid={api_key}'
         data = json.load(request.urlopen(url))
     except Exception as e:
         pass
