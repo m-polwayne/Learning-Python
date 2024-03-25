@@ -28,4 +28,4 @@ def getWeather(coords={'lat':2, 'lon':43}):
         data = json.load(request.urlopen(url))
     except Exception as e:
         pass
-    d
+    
