@@ -1,0 +1,4 @@
+The basic unit of a program is called a variable
+Operators are instructions that perform operations on variables and values in Python. They are used to manipulate and perform actions on data.
+ Comparison operators evaluate two variables or values and produce a Boolean result, either true or false
+
