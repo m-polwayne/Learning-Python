@@ -2,6 +2,8 @@ import csv
 import json
 import random
 from urllib import request
+
+import requests
 '''
 Retrieve a random quote from a specified csv file
 '''
@@ -21,11 +23,20 @@ print(quote['quote']+' - '+quote['author'])'''
 
 '''retrieve the current weather forecast from open weathermap'''
 
-def getWeather(coords={'lat':2, 'lon':43}):
-    try:
-        api_key='9286889f30eaefe86c4428f2cf4cb317'
-        url = 'https://api.openweathermap.org/data/2.5/forecast?id=524901&appid={api_key}'
-        data = json.load(request.urlopen(url))
-    except Exception as e:
-        pass
-    
+def getWeather(city):
+   
+    api_key='9286889f30eaefe86c4428f2cf4cb317'
+    url = f'https://api.openweathermap.org/data/2.5/forecast?id=524901&appid={api_key}&q={city}'
+    data = requests.get(url).json() 
+    print(data)
+   
+
+def getTwitterTrend():
+    pass
+
+
+def getWikepidiaArticle():
+    pass
+
+if __name__=='__main__':
+    getWeather('Cape Town')
