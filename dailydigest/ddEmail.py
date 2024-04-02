@@ -34,7 +34,7 @@ class DailyDigestEmail:
         if self.content['weather']['include'] and self.content['weather']['content']:
             k = self.content["weather"]["content"]
             text = text + '******** Daily weather and forecast *********\n\n'
-            text += f'the current temperature is {k()["temp"]} degrees celcius\nfeels like {k()["feels"]} degrees celcius\n the minimum temperature will be {k()["min"] } degrees celcius\nthe maximum temperature will be {k()["max"] } degrees celcius\nthe weather conditions will be {k()["weather"] }\n\n'
+            text += f'the current temperature is {k()["temp"]} degrees celcius\nfeels like {k()["feels"]} degrees celcius\nthe minimum temperature will be {k()["min"] } degrees celcius\nthe maximum temperature will be {k()["max"] } degrees celcius\nthe weather conditions will be {k()["weather"] }\n\n'
 
         print(text)
         f = open('dd.txt', 'w')
