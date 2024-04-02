@@ -1,0 +1,1 @@
+print(round(66,-1))
