@@ -6,7 +6,7 @@ which are denoted by the def statement.
 first its the def statement followed by the name of the function followed by the parameters 
 or arguments in brackets and the functions operations indented under.
 Functions in Python allow us to contain blocks of code for reuse in cases where an operation
-needs to be repeated, without having to repeat and recode the operation. 
+needs to be repeated, without having to repeat coding the operation. 
 They make our code more organized, readable, and maintainable.
 
 Here's a simple example of a function which we used to move the python in our python project
