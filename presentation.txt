@@ -1,20 +1,41 @@
 Ladies and gentlemen,
 
-Today, I want to introduce you to a fundamental concept in Python programming: functions.
+Today, I will be presenting to you a fundamental concept in Python programming: functions.
+starting with the anatomy of a function, Functions are composed of a name and parameters, 
+which are denoted by the def statement.
+first its the def statement followed by the name of the function followed by the parameters 
+or arguments in brackets and the functions operations indented under.
+Functions in Python allow us to contain blocks of code for reuse in cases where an operation
+needs to be repeated, without having to repeat and recode the operation. 
+They make our code more organized, readable, and maintainable.
 
-Functions in Python allow us to contain blocks of code for reuse. They make our code more organized, readable, and maintainable.
+Here's a simple example of a function which we used to move the python in our python project
 
-Here's a simple example:
 
-```python
-def greet(name):
-    return f"Hello, {name}!"
+In this example, the move function moves the head of the python in the x or y direction by increasing or decreasing the 
+x or y coordinate of the head.
 
-print(greet("Alice"))
+Functions in Python can do much more, like modifying variables, performing calculations, and interacting with users. 
+They can be nested, passed as arguments like lambdas,they return values or can be returned as values.
+
+In summary, functions are the building blocks of Python programs, enabling segmentation, reusability,
+and clearer code. So, next time you write code, think about how functions can help. Thank you.
+
+ 
+``def move():
+    if head.direction == "up":
+        y = head.ycor()
+        head.sety(y + increment)
+
+    if head.direction == "down":
+        y = head.ycor()
+        head.sety(y - increment)
+
+    if head.direction == "left":
+        x = head.xcor()
+        head.setx(x - increment)
+
+    if head.direction == "right":
+        x = head.xcor()
+        head.setx(x + increment)
 ```
-
-In this example, the `greet` function takes a name as input and returns a greeting message.
-
-Functions in Python can do much more, like modifying variables, performing calculations, and interacting with users. They can be nested, passed as arguments like lambdas, or returned as values.
-
-In summary, functions are the building blocks of Python programs, enabling segmentation, reusability, and clearer code. So, next time you write code, think about how functions can help. Thank you.
