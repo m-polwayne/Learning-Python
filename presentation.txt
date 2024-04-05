@@ -11,15 +11,14 @@ They make our code more organized, readable, and maintainable.
 
 Here's a simple example of a function which we used to move the python in our python project
 
-
 In this example, the move function moves the head of the python in the x or y direction by increasing or decreasing the 
-x or y coordinate of the head.
+x or y coordinate of the head object.
 
 Functions in Python can do much more, like modifying variables, performing calculations, and interacting with users. 
-They can be nested, passed as arguments like lambdas,they return values or can be returned as values.
+They can be nested, passed as arguments like lambdas,they can return values or be returned as values.
 
 In summary, functions are the building blocks of Python programs, enabling segmentation, reusability,
-and clearer code. So, next time you write code, think about how functions can help. Thank you.
+and clearer code. Thank you.
 
  
 ``def move():

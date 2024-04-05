@@ -34,6 +34,8 @@ def speedIncrease():
         speed=0.8
     if score>=130:
         speed=1.5
+    if score>=150:
+        speed=1.8
 
 def food():
     global score,x,y,x_0,y_0
@@ -71,7 +73,8 @@ while i < 2:
 
     pygame.display.update()
     if x_0 >= 800 or y_0 >= 800 or x_0 <= 0 or y_0 <= 0:
-        i = 3
+        i = 3 
+        print(f'you dead nigga atleast you got: {score}')
     if pygame.key.get_pressed()[pygame.K_RIGHT] and direction != 'left':
         direction = 'right'
     if pygame.key.get_pressed()[pygame.K_LEFT] and direction != 'right':
