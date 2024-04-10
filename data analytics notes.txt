@@ -1,0 +1,38 @@
+data analytics
+    Analytics programs allow businesses to access the untapped value locked within their data.
+    We collect data from many sources to derive insights
+    data anlytics is growing because of growing data, cheaper storage and growing computing power
+    data can be structural data or unstructured data, 
+    stractural data is rectangular and can be represented in a table, eg. saving a persons details, name , surname, id 
+    unstructured data cannot be represented as a table, such as images, audio and video and cannot be added to a spread sheet 
+
+data types.
+
+    A data element is an attribute about a person, place, or thing containing data within a range of values. 
+    Data elements also describe characteristics of activities, including orders, transactions, and events. 
+    A data type limits the values a data element can have
+    Individual data types support structured, unstructured, and semi-structured data
+    Tabular data is data organized into a table, made up of columns and rows
+    Structured data is tabular in nature and organized into rows and columns.
+    The character data type limits data entry to only valid characters. 
+    Characters can include the alphabet that you might see on your keyboard, as well as numbers.
+    Alphanumeric is the most widely used data type for storing character-based data.
+    Strong typing is when technology rigidly enforces data types
+    Weak typing loosely enforces data types
+
+qualitative & quantitative data
+
+    Quantitative data consists of numeric values. Data elements whose values come from counting or measuring are quantitative
+    Qualitative data consists of frequent text values. Data elements whose values describe characteristics, traits, and attitudes are all qualitative
+
+discrete and continuous
+
+    discrete data represents measurements that can't be subdivided.
+    when you measure things like height and weight, you are collecting continuous data
+
+Relational and nonrelation data
+
+    Relational databases excel at storing and processing structured data
+    The need to interact with unstructured data is one of the reasons behind the rise of nonrelational databases
+    Cardinality refers to the relationship between two entities, showing how many instances of one entity relate to instances in another entity
+    A unary relationship is when an entity has a connection with itself. For example, a unary relationship where a single manager has multiple employees.
