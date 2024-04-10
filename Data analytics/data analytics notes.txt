@@ -32,7 +32,64 @@ discrete and continuous
 
 Relational and nonrelation data
 
+    A nonrelational database does not have a predefined structure based on tabular data
     Relational databases excel at storing and processing structured data
     The need to interact with unstructured data is one of the reasons behind the rise of nonrelational databases
     Cardinality refers to the relationship between two entities, showing how many instances of one entity relate to instances in another entity
     A unary relationship is when an entity has a connection with itself. For example, a unary relationship where a single manager has multiple employees.
+
+    Relational
+        consistancy
+        security
+        ease of backup
+    
+    nonrelational data is stored on ke-value basis
+        flexibility
+        scalibility
+        cost effective  
+
+key value database
+
+    A key-value database is one of the simplest ways of storing data. 
+    Data is stored as a collection of keys and their corresponding values. 
+    A key must be globally unique across the entire database.
+    The use of keys differs from a relational database, where a given key identifies an individual row in a specific table. 
+    There are no structural limits on the values of a key. 
+    A key can be a sequence of numbers, alphanumeric strings, or some other combination of values. 
+    The data that corresponds with a key can be any structured or unstructured data type
+
+document database
+
+    A document database is similar to a key-value database, with additional restrictions
+    In a key-value database, the value can contain anything. 
+    With a document database, the value is restricted to a specific structured format
+
+column-family database
+
+    Column-family databases use an index to identify data in groups of related columns.
+
+Graph databases
+
+    Graph databases specialize in exploring relationships between pieces of data.
+    Relational models focus on mapping the relationships between entities. 
+    Graph models map relationships between actual pieces of data
+    Understanding the connection between products is a challenge that graphs solve with ease.
+
+Database use cases
+    Different business needs require different database designs. 
+    While all databases store data, the database's structure needs to match its intended purpose
+    Business requirements impact the design of individual tables and how they are interconnected
+
+    Databases tend to support two major categories of data processing: 
+        Online Transactional Processing (OLTP) and Online Analytical Processing (OLAP).
+
+        Online Transactional Processing
+        OLTP systems handle the transactions we encounter every day
+
+    Normalization-Normalization is a process for structuring a database in a way that minimizes duplication of data.
+    One of the principles is that a given piece of data is stored once and only once.
+    First normal form (1NF) is when every row in a table is unique and every column contains a unique value
+    Second normal form (2NF) starts where 1NF leaves off. In addition to each row being unique, 
+    2NF applies an additional rule stating that all nonprimary key values must depend on the entire primary key
+    Third normal form (3NF) builds upon 2NF by adding a rule stating all columns must depend on only the primary key.
+    
