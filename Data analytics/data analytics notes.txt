@@ -76,6 +76,7 @@ Graph databases
     Understanding the connection between products is a challenge that graphs solve with ease.
 
 Database use cases
+
     Different business needs require different database designs. 
     While all databases store data, the database's structure needs to match its intended purpose
     Business requirements impact the design of individual tables and how they are interconnected
@@ -85,11 +86,85 @@ Database use cases
 
         Online Transactional Processing
         OLTP systems handle the transactions we encounter every day
-
+        OLTP databases need to balance transactional read and write performance, resulting in a highly normalized design
+        Typically, OLTP databases are in 3NF.
     Normalization-Normalization is a process for structuring a database in a way that minimizes duplication of data.
     One of the principles is that a given piece of data is stored once and only once.
     First normal form (1NF) is when every row in a table is unique and every column contains a unique value
     Second normal form (2NF) starts where 1NF leaves off. In addition to each row being unique, 
     2NF applies an additional rule stating that all nonprimary key values must depend on the entire primary key
     Third normal form (3NF) builds upon 2NF by adding a rule stating all columns must depend on only the primary key.
+
+    Online analytical Processing
+        OLAP systems focus on the ability of organizations to analyze data.
+        databases that power OLAP systems have a denormalized design
+        denormalization results in wider tables than those found in an OLTP database
+    
+    Schema Concepts
+    The design of a database schema depends on the purpose it serves.
+    Data warehouses serve the entire organization
+    A data mart is a subset of a data warehouse  
+    data marts focus on the needs of a particular department within the organization.
+    A data lake stores raw data in its native format instead of conforming to a relational database structure
+    Using a data lake requires additional knowledge about the raw data to make it analytically useful
+
+Data acquisition Concepts
+    Data can come from internal systems you operate, or you can obtain it from third-party sources
+
+    Integration
+    You need to retrieve, reshape, and insert data to move data between operational and analytical environments
+
+        ETL
+            Extract:  In the first phase, you extract data from the source system and place it in a staging area. The goal of the extract phase is to move data from a relational database into a flat file as quickly as possible.
+            Transform:  The second phase transforms the data. The goal is to reformat the data from its transactional structure to the data warehouse's analytical design.
+            Load:  The purpose of the load phase is to ensure data gets into the analytical system as quickly as possible.
+
+        Data Collection Methods
+
+        application programming interface (API)
+        A structured method for computer systems to exchange information. 
+        APIs provide a consistent interface to calling applications, regardless of the internal database structure.
+        APIs represent a specific piece of business functionality.
+
+    Working with data
+    Whenever a SQL query executes, the database has to parse the query. 
+    Parsing translates the human-readable SQL into code the database understands
+
+
+Data Quality Challenges
+
+    Duplicate Data
+    Duplicate data occurs when data representing the same transaction is accidentally duplicated within a system.
+    Humans are primarily responsible for creating duplicate data
+
+    Redundant Data
+    redundant data happens when the same data elements exist in multiple places within a system
+    Frequently, data redundancy is a function of integrating multiple systems.
+    There are several options for resolving redundant data. 
+    One approach synchronizes changes to shared data elements between the Accounting and Sales systems
+
+    Missing Values
+    Another issue that impacts data quality is the concept of missing values. 
+    Missing values occur when you expect an attribute to contain data but nothing is there. 
+    A null value is the absence of a value. A null is not a space, blank, or other character
+    
+    Invalid Data
+    Invalid data are values outside the valid range for a given attribute. 
+    An invalid value violates a business rule instead of having an incorrect data type
+    Invalid values violate business rules, not technical rules. 
+    For example, –99,999 is a valid number, but it is an invalid temperature for a location on Earth
+
+    Nonparametric Data
+    Nonparametric data is data collected from categorical variables
+
+    Data Outliers
+    A data outlier is a value that differs significantly from other observations in a dataset
+    With outliers, you need to understand why they exist and whether they are valid in the context of your analysis.
+
+    Specification Mismatch
+    A specification describes the target value for a component. 
+    A specification mismatch occurs when an individual component's characteristics are beyond the range of acceptable values.
+
+    Data Type Validation
+    Data type validation ensures that values in a dataset have a consistent data type.
     
