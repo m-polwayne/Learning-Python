@@ -168,3 +168,23 @@ Data Quality Challenges
     Data Type Validation
     Data type validation ensures that values in a dataset have a consistent data type.
     
+
+Data Manipulation Techniques
+
+    Recording data
+    Recoding data is a technique you can use to map original values for a variable into new values to facilitate analysis
+    Recoding groups data into multiple categories, creating a categorical variable
+    A categorical variable is either nominal or ordinal.
+    Nominal variables are any variable with two or more categories where there is no natural order of the categories, like hair color or eye color
+    Ordinal variables are categories with an inherent rank. For example, T-shirt size is an example of an ordinal variable, as sizes come in small, medium, large, and extra-large
+
+    Data Merge
+    A data merge uses a common variable to combine multiple datasets with different structures into a single datase
+    Merging data improves data quality by adding new variables to your existing data
+
+    Data Blending
+    a blending combines multiple sources of data into a single dataset at the reporting layer.
+
+Concatenation
+Concatenation is the merging of separate variables into a single variable
+Concatenation is a highly effective technique when dealing with a source system that stores components of a single variable in multiple columns
