@@ -360,40 +360,51 @@ statistics
 
 Statistics Packages
 
-IBM SPSS- One of the most popular pieces of statistical software is IBM's SPSS package.
-IBM's SPSS Modeler is one popular tool for building graphical machine learning models. 
-Instead of requiring that users write code, it provides an intuitive interface where analysts 
-can select the tasks that they would like the software to carry out and then connect them in a flowchart-style interface.
+    IBM SPSS- One of the most popular pieces of statistical software is IBM's SPSS package.
+    IBM's SPSS Modeler is one popular tool for building graphical machine learning models. 
+    Instead of requiring that users write code, it provides an intuitive interface where analysts 
+    can select the tasks that they would like the software to carry out and then connect them in a flowchart-style interface.
 
-Stata- another statistical analysis package
- the same features as SPSS and SAS and provides users with both a graphical interface and a command-line interface depending on their personal preference
-Minitab- Minitab shares most of the same features as SPSS, SAS, and Stata but fits into the same category as Stata - an older tool that is not widely used today.
+    Stata- another statistical analysis package
+    the same features as SPSS and SAS and provides users with both a graphical interface and a command-line interface depending on their personal preference
+    Minitab- Minitab shares most of the same features as SPSS, SAS, and Stata but fits into the same category as Stata - an older tool that is not widely used today.
 
-RapidMiner
-RapidMiner is another graphical machine learning tool that works in a manner similar to IBM SPSS Modeler. 
-It offers access to hundreds of different algorithms that may be placed in a visually designed machine-learning workflow. 
-RapidMiner also offers prebuilt analytic templates for common business scenarios
+    RapidMiner
+    RapidMiner is another graphical machine learning tool that works in a manner similar to IBM SPSS Modeler. 
+    It offers access to hundreds of different algorithms that may be placed in a visually designed machine-learning workflow. 
+    RapidMiner also offers prebuilt analytic templates for common business scenarios
 
-Analytics Suites
+    Analytics Suites
 
-IBM Cognos It uses a web-based platform to offer analysts within an organization access to their data and is backed by IBM's Watson artificial intelligence capability
+    IBM Cognos It uses a web-based platform to offer analysts within an organization access to their data and is backed by IBM's Watson artificial intelligence capability
 
-Microsoft Power BI Power BI is Microsoft's analytics suite built on the company's popular SQL Server database platform.
+    Microsoft Power BI Power BI is Microsoft's analytics suite built on the company's popular SQL Server database platform.
 
-MicroStrategy offers many of the same tools as its counterparts, making it easy for users to build dashboards and reports and apply machine learning techniques to their business data.
+    MicroStrategy offers many of the same tools as its counterparts, making it easy for users to build dashboards and reports and apply machine learning techniques to their business data.
 
-Domo is a software-as-a-service (SaaS) analytics platform that allows businesses to ingest their data and apply a variety of analytic and modeling capabilities.
+    Domo is a software-as-a-service (SaaS) analytics platform that allows businesses to ingest their data and apply a variety of analytic and modeling capabilities.
 
-Salesforce Datorama is an analytics tool that focuses on a specific component of an organization's business: sales and marketing.
+    Salesforce Datorama is an analytics tool that focuses on a specific component of an organization's business: sales and marketing.
 
-AWS QuickSight is a dashboarding tool available as part of the Amazon Web Services cloud offering.
+    AWS QuickSight is a dashboarding tool available as part of the Amazon Web Services cloud offering.
 
-Tableau- The focus of this tool is on the easy ingestion of data from a wide variety of sources and powerful visualization capabilities that allow analysts 
-and business leaders to quickly identify trends in their data and drill down into specific details.
+    Tableau- The focus of this tool is on the easy ingestion of data from a wide variety of sources and powerful visualization capabilities that allow analysts 
+    and business leaders to quickly identify trends in their data and drill down into specific details.
 
-Qlik is another popular SaaS analytics platform, offering access to cloud-based analytics capabilities.
+    Qlik is another popular SaaS analytics platform, offering access to cloud-based analytics capabilities.
 
-BusinessObjects is an enterprise reporting tool from SAP that is designed to provide a comprehensive reporting and analytics environment for organizations.
+    BusinessObjects is an enterprise reporting tool from SAP that is designed to provide a comprehensive reporting and analytics environment for organizations.
+
+Data visualisation- Reports and dashboards both summarize data for end users
+
+Understanding the Business Requirements
+A report is a static electronic or physical document that reflects information at a given point in time
+a dashboard is an interactive visualization that encourages people to explore data dynamically.
+
+With a pull approach, you publish a report to a known location, like a web page, and let people know the frequency and timing of when the report updates.
+With a push approach, the report is automatically sent to the appropriate people as it becomes available
+With the blended approach, you inform people that the report is available while maintaining central control of the report itself.
+
 
 
 

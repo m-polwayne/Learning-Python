@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <style>
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .header-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            max-width: 100px;
+            max-height: 100px;
+        }
+        h1 {
+            text-align: center;
+            color: #6e2f8a;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #6e2f8a;
+        }
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background: #6e2f8a;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: #4b145b;
+        }
+        .radio-group input[type="radio"] {
+            display: inline;
+            margin-right: 10px;
+        }
+        .radio-group label {
+            display: inline;
+            margin-right: 20px;
+        }
+        select {
+            background-color: #f3e8ff;
+        }
+        textarea {
+            resize: vertical;
+            background-color: #f3e8ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="header-img" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgWFhMXGCAZGBUVGRscIRsgIB0iIiAdHx8eIDQlHiYxJx8bLTItMSwtOjAwIys/OD8vNzQuLjcBCgoKDg0OFhAQGC0aFSU3KzctKys3NzU3Kys3NzctKzcsLjc3ODg4NzExLi8tLTMzNC8vNzc3NzcrKystNzAtLv/AABEIAMgAyAMBIgACEQEDEQH/xAAcAAEAAwEAAwEAAAAAAAAAAAAABQYHBAEDCAL/xAA9EAACAQMBBAYFCgYDAQAAAAAAAQIDBBEFBhIhMQcTQVGBkSJhcXOyFSMyNTdCgqKx0RZDUnShwyTC4Rf/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAgEDBQT/xAAhEQEBAAICAwACAwAAAAAAAAAAAQIRAzESIUET8CJRYf/aAAwDAQACEQMRAD8AzMAHpOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAS1fZnWrfSI6tW06aoNJqo8Yw+T78PK8yJN62l+xSl/a0P9Zzzz8bGybYKeYxc5KMFlvgkjwdWk/Wln7yPxItib/gDavdz8iVPy/uVucJQnKE4tNPDT7D6xur6haXFpRrSw6snCPtUXLHlFmD9MGgfJG1ErujDFO4+cXql99eeH+I48fLcrqryx0ooBbei/QPl7au3jVhmlS+dn4PgvF48MnXK6m0duaGwO1U6cZx0WphrP3f0yV2pCdKpKnUi1JPDT5prmj6zpXVGtc17anPMqeN5d28speXHxR8tbQ/X+p++n8bOfFyXLe1ZY6R5LWmzOtXmlT1S106cqKTbmsYxHm+94Ik3rYb7Hn7mv8VQrky8ZtmM2wUAHRgAAAAAAAAAAAAAAAAb1tL9ilL+1of6zBTe9oIut0LU1TWf+LRfluN/ozhy94qx+sEOrSfrSz95H4kcp16NCU9XsYQWW6kUl+JHa9Jjbemm7rWGjaVd208ThdRlF+tRk0e/bO0o7b9HkNRsY5moddTXblL04fEvakR/TxJfw7p8M8ev/wCkv3ODoL17ehd6DcT5fOU8+U1+j8WfLJ/CZT46fdMfN56L9No7L7E1dY1BbrqR66b7VBJ7q8sv8RR9S2Fl/wDTo6NSp4oVJdamuylzkvBpxXgWrpt1yNjo9toNq8Or6UkuyEeS8WvysvPLy1jPrJNe3b0P6lW1inr2o3L9KpX3n6vR4LwWF4GL7Q/X+p++n8bNa6BJJ6RqkM8esi/y/wDhk20kJQ2i1SE1xVaomvxs3D1nWXqI43rYb7Hn7mv8VQwU3vYtOl0PN1Fj5iu+Pdmo8m83UMe2CAA7JAAAAAAAAAAAAAAAADbeiTaOz1fQJbNak05wjKKjL+ZTecpetZax3Y9ZiR+qNWpQqwq0ajjJPKlF4afemRnh5Rsumk7QdEGrULyctDqwqUm+CnLdlH1PPB+3/BYNgOjGpo1/T1bXq0XOHGFOLyov+qT713LzKZpvSttRZUVSqVqdXHJ1YZfnFrPiR20G320Ov0ZW93ebtN86dJbqft7WvU2c/Hks1b6VvHtJ9LW1NHaDWqdrY1N6jQylJcpSf0mvVwSXsfeVbZ3Vquh63Z6nQ505Za71ykvFNojgdZjJjpG/e31jQq2VxRpapT3WnTzGrhZ3HiXPsXBPwPmjbPXJbQ7R3motvdbxBPsguEf8cfa2dtvt3rdDZeWz1OcOqcXHew99Rb4xTzjHFrlyZWDnx8fjbarLLa7dFO1FLZzXZ0r6eKFZKMpdkZJ+jJ+ri14+ovHSB0avXr2Wr6FWgqk1mcJP0Z8PpRa5N+TMRLLs9t3tBs/RjQsrzeprlTqLeS9navBjPC78seyX5Vk0Log1i4vIfLNWFKkn6W7Lek/UscF7X5MtHSptBZbP7Mx2b0xpTnBQ3I/cprnn2rh4tlH1DpX2ovKLp06tOlntpQ4+cm8FJr16tzWnWuKjlOTy5Sbbb722ZMMsrvI3J0/AAO6QAAAAAAAAAAAAAAAAAntmupsKVfWLunmMGoRj/VKXPyjnzIzy8Zt04uPzy1vSBB365ZRsNSqU6TzB+lB98XxX7eBNaHK5p7MVJWd3CnLr/pTaSxuLhlojLl1jMovDg3ncb8VYEhrde7q3EI3l5Co0uDg01x7MpErc6heWWjaNCyr7u9GWeXH0+HMXksk9dmPFjbl79RWgTu1alGpZK4guu6vNSSWFLjww+T4dqPxVS/hCg8fz38Js5dyXXZlw6yym+ptChpp4aJvSGrLR7zU6cU6ilGEG1ndzxcvaeitrVxd2NW2v11j4OM5c4d+Hjin3Dztt1PUZ+PGYzyvuzaLB26NZfKGpUaEniOcyfdFcW/Ik9pHQ1C3o6tZU8Ry6corsx9F+Mf0F5JMpiY8NvHc99ftV8AHVxAAAAAAAAAAAAAAAADvvr+News7OhBqME28/ek+b/Y4ATcZbNqxyuMsn133d/G6020t6kHv08pS74vil4M8K/j8hvT9x563rN78OMHCDPCdK/Llvf+aDuvr+NzYWFtGDTpxab78vJwg24y2b+JmVksn136hqCu7Kwt9x5pRcW325eUeJ38ZaJT0/ceVUc8+1YwcIM8JrSry5W2/3NJDS9Rha069tdUd+lUxvRTw01ykn3o91bULO3sK9ppdGa6zG/Oo1nCed1JciJBl48bdtnNlJp32N/GzsLylCD6yolHe7o/eXiNPv429reWteDlCpHkuyS4xkcANuE9snLlNAALcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/2Q==" alt="Header Image">
+        <h1>Survey Form</h1>
+        <form action="g.php" method="post">
+            <label for="fullname">1. Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="cohort">2. Cohort:</label>
+            <input type="text" id="cohort" name="cohort" required>
+
+            <label for="age">3. Age:</label>
+            <input type="int" id="age" name="age">
+
+            <label for="gender">4. Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="overall">5. Overall, how satisfied are you with the program you're doing?</label>
+            <select id="overall" name="overall">
+                <option value="ns">1-Not satisfied</option>
+                <option value="ss">2-Satisfied</option>
+                <option value="es">3-Extremely satisfied</option>
+            </select>
+
+            <label for="mentorship">6. How would you rate the level of mentorship and guidance provided to you during your program?</label>
+            <select id="mentorship" name="mentorship">
+                <option value="poor">1-Poor</option>
+                <option value="fair">2-Fair</option>
+                <option value="average">3-Average</option>
+                <option value="good">4-Good</option>
+                <option value="excellent">5-Excellent</option>
+            </select>
+
+            <label for="communication">7. On a scale of 1-5, how would you rate the level of communication within capacity?</label><br>
+            <div class="radio-group">
+                <input type="radio" id="communication1" name="communication" value="1">
+                <label for="communication1">1</label>
+                <input type="radio" id="communication2" name="communication" value="2">
+                <label for="communication2">2</label>
+                <input type="radio" id="communication3" name="communication" value="3">
+                <label for="communication3">3</label>
+                <input type="radio" id="communication4" name="communication" value="4">
+                <label for="communication4">4</label>
+                <input type="radio" id="communication5" name="communication" value="5">
+                <label for="communication5">5</label>
+            </div>
+
+            <label for="inclusivity">8. Do you feel that Capaciti provides a safe and inclusive work environment?</label>
+            <select id="inclusivity" name="inclusivity">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="development">9. How would you rate Capaciti's commitment to employee development and growth?</label><br>
+            <input type="radio" id="development1" name="development" value="1">
+            <label for="development1">1-Not committed</label><br>
+            <input type="radio" id="development2" name="development" value="2">
+            <label for="development2">2-Slightly committed</label><br>
+            <input type="radio" id="development3" name="development" value="3">
+            <label for="development3">3-Moderately committed</label><br>
+            <input type="radio" id="development4" name="development" value="4">
+            <label for="development4">4-Very committed</label><br>
+            <input type="radio" id="development5" name="development" value="5">
+            <label for="development5">5-Extremely committed</label><br>
+
+            <label for="workload">10. Is your workload manageable?</label>
+            <select id="workload" name="workload">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            
+            <label for="resource">11. Do you have access to necessary resources and tools to perform your tasks effectively?</label>
+            <select id="resource" name="resources">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="tasks">12. On a scale of 1-5, how would you rate the relevance of the tasks/projects assigned to you?</label><br>
+            <input type="radio" id="tasks1" name="tasks" value="1">
+            <label for="tasks1">1-Not relevant</label><br>
+            <input type="radio" id="tasks2" name="tasks" value="2">
+            <label for="tasks2">2-Slightly relevant</label><br>
+            <input type="radio" id="tasks3" name="tasks" value="3">
+            <label for="tasks3">3-Moderately</label><br>
+            <input type="radio" id="tasks4" name="tasks" value="4">
+            <label for="tasks4">4-Very relevant</label><br>
+            <input type="radio" id="tasks5" name="tasks" value="5">
+            <label for="tasks5">5-Extremely relevant</label><br>
+
+            <label for="feedback">13. Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
