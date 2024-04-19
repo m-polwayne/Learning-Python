@@ -168,7 +168,6 @@ Data Quality Challenges
     Data Type Validation
     Data type validation ensures that values in a dataset have a consistent data type.
     
-
 Data Manipulation Techniques
 
     Recoding data
@@ -338,6 +337,63 @@ statistics
 
     Measures of Position
 
+    Inferential statistics
+    Inferential statistics is a branch of statistics that uses sample data to draw conclusions about the overall population
+
+    Confidence Intervals
+    Each time you take a sample from a population, the statistics you generate are unique to the sample
+    A confidence interval describes the possibility that a sample statistic contains the true population parameter in a range of values around the mean.
+    When calculating a confidence interval, you end up with a lower bound value(lower limit) and an upper bound value(upper limit).
+
+    Hypothesis Testing
+    A hypothesis test consists of two statements, only one of which can be true. 
+    It uses statistical analysis of observable data to determine which of the two statements is most likely to be true
+    
+    
+    Simple Linear Regression
+    Simple linear regression is an analysis technique that explores the relationship between an independent variable and a dependent variable
+
+    From Simple to Multiple Linear Regression
+
+    analysis techniques
+    
+
+Statistics Packages
+
+IBM SPSS- One of the most popular pieces of statistical software is IBM's SPSS package.
+IBM's SPSS Modeler is one popular tool for building graphical machine learning models. 
+Instead of requiring that users write code, it provides an intuitive interface where analysts 
+can select the tasks that they would like the software to carry out and then connect them in a flowchart-style interface.
+
+Stata- another statistical analysis package
+ the same features as SPSS and SAS and provides users with both a graphical interface and a command-line interface depending on their personal preference
+Minitab- Minitab shares most of the same features as SPSS, SAS, and Stata but fits into the same category as Stata - an older tool that is not widely used today.
+
+RapidMiner
+RapidMiner is another graphical machine learning tool that works in a manner similar to IBM SPSS Modeler. 
+It offers access to hundreds of different algorithms that may be placed in a visually designed machine-learning workflow. 
+RapidMiner also offers prebuilt analytic templates for common business scenarios
+
+Analytics Suites
+
+IBM Cognos It uses a web-based platform to offer analysts within an organization access to their data and is backed by IBM's Watson artificial intelligence capability
+
+Microsoft Power BI Power BI is Microsoft's analytics suite built on the company's popular SQL Server database platform.
+
+MicroStrategy offers many of the same tools as its counterparts, making it easy for users to build dashboards and reports and apply machine learning techniques to their business data.
+
+Domo is a software-as-a-service (SaaS) analytics platform that allows businesses to ingest their data and apply a variety of analytic and modeling capabilities.
+
+Salesforce Datorama is an analytics tool that focuses on a specific component of an organization's business: sales and marketing.
+
+AWS QuickSight is a dashboarding tool available as part of the Amazon Web Services cloud offering.
+
+Tableau- The focus of this tool is on the easy ingestion of data from a wide variety of sources and powerful visualization capabilities that allow analysts 
+and business leaders to quickly identify trends in their data and drill down into specific details.
+
+Qlik is another popular SaaS analytics platform, offering access to cloud-based analytics capabilities.
+
+BusinessObjects is an enterprise reporting tool from SAP that is designed to provide a comprehensive reporting and analytics environment for organizations.
 
 
 
