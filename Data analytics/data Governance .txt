@@ -1,0 +1,35 @@
+Data governance is all about managing data well, but data governance is not restricted to only data management.
+when data is managed well, it can drive innovation and growth and can be an enterprise’s most abundant and important lever for success.
+Successful data governance also means that data risks can be minimized, and data compliance and regulatory requirements can be met with ease
+All businesses generate, process, use, and store data as a result of their daily operations.
+
+Data Governance Versus Data Management
+Data governance is focused on roles and responsibilities, policies, definitions, metrics, and the lifecycle of data. 
+Data management is the technical implementation of data governance
+
+The Value of Data Governance
+If an organization considers data to be a priority and it puts in place processes and policies to leverage the data’s value and reduce data risks, 
+that organization is demonstrating a strong commitment to data controls and accountabilities. 
+In other words, that organization values data governance.
+Data governance does not emerge by chance. It’s a choice and requires organizational commitment and investment.
+
+Creating a Data Governance Program
+
+Defining the vision, goals, and benefits.
+Analyzing the current state of data governance and management.
+Developing a proposal based on the first two steps, including a draft plan.
+Achieving leadership approval.
+Designing and developing the program.
+Implementing the program.
+Monitoring and measuring performance.
+Maintaining the program.
+
+Each organization will approach data governance in a manner that best reflects the desired outcomes.
+In summary, data governance is about managing data well and helping to deliver its optimum value to your organization.
+It includes ensuring your data is available, usable, and secure. 
+It’s the actions that team members take, the policies and processes they must follow, and the use of technologies that support them throughout the data lifecycle in their organization.
+
+
+
+
+
