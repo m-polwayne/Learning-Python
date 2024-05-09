@@ -1,3 +1,5 @@
+for python projects and scrips find in  folder named python 
+
 # Python-Week--1
 Python is case sensitive so it is important that you use the correct case, otherwise your code will not work.
 
